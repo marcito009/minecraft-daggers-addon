@@ -1,0 +1,37 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "daggers:stone_dagger",
+      "category": "weapon"
+    },
+    "components": {
+      "minecraft:max_damage": 131,
+      "minecraft:damage": 3,
+      "minecraft:use_duration": 20,
+      "minecraft:enchantable": {
+        "value": 5,
+        "slot": "sword"
+      },
+      "minecraft:weapon": {
+        "on_hit_block": {
+          "event": "daggers:hit"
+        },
+        "on_hurt_entity": {
+          "event": "daggers:hit_entity"
+        }
+      },
+      "minecraft:display_name": {
+        "value": "Adaga de Pedra"
+      },
+      "minecraft:icon": {
+        "texture": "daggers_stone"
+      },
+      "minecraft:hand_equipped": true,
+      "minecraft:digger": {
+        "use_efficiency": false,
+        "destroy_speeds": []
+      }
+    }
+  }
+}

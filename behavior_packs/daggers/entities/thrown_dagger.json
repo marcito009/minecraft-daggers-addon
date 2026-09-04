@@ -1,0 +1,52 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "daggers:thrown_dagger",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:physics": {},
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": "variable.damage_amount",
+            "knockback": true,
+            "max_knockback_velocity": 0.4
+          },
+          "arrow_particle": {
+            "particle_type": "critical_hit"
+          }
+        },
+        "uncertainty_base": 0.0,
+        "hit_player": true,
+        "hit_entity": true,
+        "lightning": false,
+        "is_critical": true
+      },
+      "minecraft:lifetime": {
+        "expires_event": "daggers:despawn_projectile",
+        "expires_in_day": 0.5
+      },
+      "minecraft:owner": {},
+      "minecraft:effect": [
+        {
+          "name": "speed",
+          "duration": 5,
+          "amplifier": 0
+        }
+      ]
+    },
+    "events": {
+      "daggers:despawn_projectile": {
+        "remove": {}
+      }
+    }
+  }
+}
