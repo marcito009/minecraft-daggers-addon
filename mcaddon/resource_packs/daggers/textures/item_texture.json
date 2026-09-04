@@ -1,0 +1,23 @@
+{
+  "resource_pack_version": [1, 0, 0],
+  "texture_data": {
+    "daggers_wooden": {
+      "textures": "textures/items/daggers/wooden_dagger"
+    },
+    "daggers_stone": {
+      "textures": "textures/items/daggers/stone_dagger"
+    },
+    "daggers_iron": {
+      "textures": "textures/items/daggers/iron_dagger"
+    },
+    "daggers_gold": {
+      "textures": "textures/items/daggers/gold_dagger"
+    },
+    "daggers_diamond": {
+      "textures": "textures/items/daggers/diamond_dagger"
+    },
+    "daggers_netherite": {
+      "textures": "textures/items/daggers/netherite_dagger"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "daggers:netherite_dagger",
+      "category": "weapon"
+    },
+    "components": {
+      "minecraft:max_damage": 2031,
+      "minecraft:damage": 8,
+      "minecraft:use_duration": 20,
+      "minecraft:enchantable": {
+        "value": 12,
+        "slot": "sword"
+      },
+      "minecraft:weapon": {
+        "on_hit_block": {
+          "event": "daggers:hit"
+        },
+        "on_hurt_entity": {
+          "event": "daggers:hit_entity"
+        }
+      },
+      "minecraft:display_name": {
+        "value": "Adaga de Netherita"
+      },
+      "minecraft:icon": {
+        "texture": "daggers_netherite"
+      },
+      "minecraft:hand_equipped": true,
+      "minecraft:digger": {
+        "use_efficiency": false,
+        "destroy_speeds": []
+      },
+      "minecraft:fire_resistant": {}
+    }
+  }
+}
